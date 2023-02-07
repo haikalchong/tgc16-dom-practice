@@ -18,7 +18,7 @@ it("should be able to select the header", async () => {
   } catch (e) {
     solution = require("./script.js");
   }  
-  expect(document.querySelector("h1").innerText.toLowerCase()).toBe("Hello world!".toLowerCase());
+  expect(document.querySelector("h1").innerHTML.toLowerCase()).toBe("Hello world!".toLowerCase());
   expect(document.querySelector("span#important").style.backgroundColor).toBe('red');
   expect(document.querySelector("li.todo").style.fontFamily.toLowerCase()).toBe('Verdana'.toLowerCase());
   expect(document.querySelector("li.todo").style.fontSize).toBe('16px');

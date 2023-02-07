@@ -19,7 +19,7 @@ it("should be able to select the header", async () => {
     solution = require("./script.js");
   }
   expect(document.querySelector("h1").style.color).toBe('green');
-  expect(document.querySelector("li.finished").innerText.toLowerCase()).toBe('repay credit card debt');
+  expect(document.querySelector("li.finished").innerHTML.toLowerCase()).toBe('repay credit card debt');
   expect(document.querySelector("li#urgent").style.borderColor).toBe('black');
   expect(document.querySelector("li#urgent").style.borderWidth).toBe('2px');
   expect(document.querySelector(".emphasis").style.textDecoration).toBe('underline');
